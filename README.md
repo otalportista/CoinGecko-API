@@ -12,7 +12,7 @@ A Node.js wrapper for the CoinGecko API with no dependencies.
 
 Latest version: 1.0.10
 
-`npm install coingecko-api`
+`npm install coingecko-wrapper-api`
 
 ## • CoinGecko API Documentation
 
@@ -21,8 +21,8 @@ For complete API documentation, up-to-date parameters, responses and errors, ple
 ## • Quick Start Example
 
 ```javascript
-//1. Import coingecko-api
-const CoinGecko = require('coingecko-api');
+//1. Import coingecko-wrapper-api
+const CoinGecko = require('coingecko-wrapper-api');
 
 //2. Initiate the CoinGecko API Client
 const CoinGeckoClient = new CoinGecko();
@@ -129,6 +129,18 @@ Check API server status.
 Usage Example:
 ```javascript
 let data = await CoinGeckoClient.ping();
+```
+
+___
+### • Trend
+Get trend coins
+
+#### `trend()`
+Get trend coins
+
+Usage Example:
+```javascript
+let data = await CoinGeckoClient.trend();
 ```
 
 ___
